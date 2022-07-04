@@ -1,0 +1,21 @@
+-- #mysql
+-- ALTER TABLE employers
+-- MODIFY COLUMN yearly_revenue FLOAT(5,2); --mysql
+-- ALTER TABLE conversations
+-- MODIFY COLUMN date_sent TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+-- ALTER TABLE users
+-- MODIFY COLUMN full_name VARCHAR(300);
+-- ALTER TABLE users
+-- MODIFY COLUMN full_name VARCHAR(300) NOT NULL,
+-- MODIFY COLUMN current_status ENUM('employed', 'self-employed', 'unemployed') NOT NULL;
+-- #pgsql
+-- ALTER TABLE employers
+-- ALTER COLUMN yearly_revenue SET DATA TYPE FLOAT; --postgres
+-- ALTER TABLE conversations
+-- ALTER COLUMN date_sent SET DATA TYPE TIMESTAMP WITH TIME ZONE,
+-- ALTER COLUMN date_sent SET DEFAULT CURRENT_TIMESTAMP;
+-- ALTER TABLE users
+-- ALTER COLUMN full_name SET DATA TYPE VARCHAR(300);
+-- ALTER TABLE users
+-- ALTER COLUMN full_name SET NOT NULL,
+-- ALTER COLUMN current_status SET NOT NULL;
