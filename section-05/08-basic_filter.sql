@@ -1,0 +1,17 @@
+-- SELECT * FROM sales
+-- WHERE volume > 1000;
+--
+-- SELECT * FROM sales
+-- WHERE is_recurring IS TRUE;
+--
+-- SELECT * FROM sales
+-- WHERE is_disputed IS TRUE AND volume > 5000;
+--
+-- SELECT * FROM sales
+-- WHERE date_created > '2021-11-01' AND date_created  < '2022-05-01';
+--
+-- SELECT * FROM sales
+-- WHERE date_created BETWEEN '2021-10-31' AND '2022-05-02';
+--
+-- SELECT * FROM sales
+-- WHERE customer_name <> 'Max Schwarz';
