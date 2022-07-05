@@ -1,0 +1,58 @@
+-- CREATE DATABASE shop;
+--
+-- CREATE TABLE products (
+--     name VARCHAR(240),
+--     price FLOAT,
+--     description TEXT,
+--     quantity INT,
+--     image VARCHAR(400)
+-- );
+--
+-- INSERT INTO products (name, price, description, quantity, image)
+-- VALUES
+--     (
+--         'Black Chair',
+--         59.99,
+--         'A contemporary design with solid oak construction, perfect for the dining room table.',
+--         25,
+--         'https://cb.scene7.com/is/image/Crate/VintnerBlkSdChrSSS20_1x1/$web_pdp_main_carousel_zoom_med$/200402124905/vintner-black-wood-dining-chair.jpg'
+--     ),
+--     (
+--         'Revlon Hair Dryeer',
+--         11.12,
+--         'High quality, multi-setting, with variable speeds from high to low.',
+--         49,
+--         'https://m.media-amazon.com/images/I/619Mu2NY1mL._SL1500_.jpg'
+--     ),
+--     (
+--         'Hihiker Camping Sleeping Bag',
+--         42.95,
+--         'SLEEPING ON THE GROUND HAS NEVER BEEN SO COMFORTABLE: Sleeping outdoors is a unique experience, but also a very uncomfortable one. Hihiker has created this premium camping sleeping bedroll to solve exactly that problem!',
+--         105,
+--         'https://m.media-amazon.com/images/I/71FAbowR4WL._AC_SL1500_.jpg'
+--     ),
+--     (
+--         'Keurig K-Supreme Black Single Serve Coffee Maker',
+--         159.99,
+--         'Elevate your coffee experience to delicious new heights with the Keurig K-Supreme Single Serve coffee maker. The K-Supreme coffee maker is the first series of the Keurig brewer to feature MultiStream Technology, an innovative new way to more evenly saturate the coffee grounds* in every K-Cup pod. This technique extracts full flavor and aroma from your K-Cup, pod, so you can enjoy an exceptionally flavorful experience every time you brew.',
+--         22,
+--         'https://b3h2.scene7.com/is/image/BedBathandBeyond/2020-08-17-12-06_5000350797_imageset?$529$'
+--     );
+--
+-- pgsql
+-- ALTER TABLE products
+-- ALTER COLUMN name SET NOT NULL,
+-- ALTER COLUMN description SET NOT NULL,
+-- ALTER COLUMN quantity SET DEFAULT 0,
+- -
+ADD CONSTRAINT price_check CHECK (price > 0);
+--
+-- mysql
+-- ALTER TABLE products
+-- MODIFY COLUMN name VARCHAR(240) NOT NULL,
+-- MODIFY COLUMN description TEXT NOT NULL,
+-- MODIFY COLUMN quantity INT DEFAULT 0,
+-- MODIFY COLUMN price FLOAT CHECK (price > 0);
+--
+ALTER TABLE products
+ADD COLUMN id SERIAL PRIMARY KEY;
