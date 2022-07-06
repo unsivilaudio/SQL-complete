@@ -1,16 +1,6 @@
 {
     "sqltools.connections": [
         {
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 5432,
-            "askForPassword": true,
-            "driver": "PostgreSQL",
-            "name": "pg-sql",
-            "database": "shop",
-            "username": "superadmin"
-        },
-        {
             "mysqlOptions": {
                 "authProtocol": "default"
             },
@@ -20,8 +10,18 @@
             "askForPassword": true,
             "driver": "MySQL",
             "name": "mysql1",
-            "database": "shop",
+            "database": "relations",
             "username": "root"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "pg-sql",
+            "database": "relations",
+            "username": "superadmin"
         }
     ]
 }
