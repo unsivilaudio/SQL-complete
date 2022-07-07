@@ -1,6 +1,16 @@
 {
     "sqltools.connections": [
         {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "pg-sql",
+            "database": "relations",
+            "username": "superadmin"
+        },
+        {
             "mysqlOptions": {
                 "authProtocol": "default"
             },
@@ -10,18 +20,8 @@
             "askForPassword": true,
             "driver": "MySQL",
             "name": "mysql1",
-            "database": "relations",
+            "database": "restaurants",
             "username": "root"
-        },
-        {
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 5432,
-            "askForPassword": true,
-            "driver": "PostgreSQL",
-            "name": "pg-sql",
-            "database": "relations",
-            "username": "superadmin"
         }
     ]
 }
